@@ -10,8 +10,12 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.use(express.static(path.join(__dirname + '/../client/build')))
+/*React root*/
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + '/../client/build/index.html'));
+});
+
 
 app.use(logger('dev'));
 app.use(express.json());

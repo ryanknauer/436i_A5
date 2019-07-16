@@ -13,13 +13,6 @@ connection.once('open', function() {
     console.log("MongoDB database connection established successfully");
 })
 
-const app = express();
-/*Adds the react production build to serve react requests*/
-app.use(express.static(path.join(__dirname + '/../client/build')))
-/*React root*/
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + '/../client/build/index.html'));
-});
 
 
 //var messages =  [{name:'ryan', text: 'hello world'}, {name:'carl', text: 'hello ryan'}]
