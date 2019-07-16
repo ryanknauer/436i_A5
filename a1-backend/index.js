@@ -3,7 +3,7 @@ var router = express.Router();
 const MongoClient = require('mongodb').MongoClient;
 const uri = "mongodb+srv://m001-student:m001-mongodb-basics@cluster0-xs4rj.mongodb.net/test?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true });
-let Messages = require('../messages.model');
+let Messages = require('./messages.model');
 const mongoose = require('mongoose')
 var path = require('path');
 
