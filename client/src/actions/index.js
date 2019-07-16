@@ -33,7 +33,7 @@ export const setMessages = messages => {
 export function getMessagesAsync() {
 	return function(dispatch){
 		dispatch(toggleLoader(true))
-		return axios.get('http://localhost:3000/messages')
+		return axios.get('http://localhost:3000/')
 		.then(function (response) {
 		  console.log("axios returns")
 		  console.log(response.data);
@@ -46,7 +46,7 @@ export function getMessagesAsync() {
 export function postMessageAsync(message) {
 return function(dispatch){
 	console.log(message)
-	return axios.post('http://localhost:3000/messages',message )
+	return axios.post('http://localhost:3000/',message )
 	.then(function (response) {
 		console.log("axios returns")
 		console.log(response.data);
