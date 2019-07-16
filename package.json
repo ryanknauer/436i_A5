@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "start": "cd a1-backend && npm install && node index.js",
+        "start": "cd a1-backend && npm install && npm start",
         "heroku-postbuild": "cd a1-app && npm install && npm start"
     }
   }
