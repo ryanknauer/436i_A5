@@ -3,8 +3,11 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "start": "cd a1-backend && npm install && npm start",
-        "heroku-postbuild": "cd a1-app && npm install && npm start"
+        "start": "cd a1-backend && npm start",
+        "heroku-postbuild": "cd a1-app &&  npm start"
+    },
+    "engines": {
+        "node": "10.15.3"
     }
   }
   
