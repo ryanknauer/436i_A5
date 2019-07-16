@@ -10,7 +10,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-
+app.use(cors()) 
 // view engine setup
 app.use(express.static(path.join(__dirname + '/../client/build')))
 /*React root*/
