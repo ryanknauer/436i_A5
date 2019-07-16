@@ -1,0 +1,10 @@
+{
+    "name": "a4-name",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "cd a1-backend && npm install && node index.js",
+        "heroku-postbuild": "cd a1-app && npm install && npm run build"
+    }
+  }
+  
