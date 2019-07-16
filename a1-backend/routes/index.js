@@ -18,7 +18,7 @@ connection.once('open', function() {
 //var messages =  [{name:'ryan', text: 'hello world'}, {name:'carl', text: 'hello ryan'}]
 
 /* GET home page. */
-router.get('/messages', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.header('Content-Type', 'application/json')
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -36,7 +36,7 @@ router.get('/messages', function(req, res, next) {
 });
 
 
-router.post('/messages', function(req, res, next) {
+router.post('/', function(req, res, next) {
   res.header('Content-Type', 'application/json')
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
